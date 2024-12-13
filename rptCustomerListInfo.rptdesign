@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.6.0.v201606072122</property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">120</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">library.rptdesign.rptlibrary</property>
+            <property name="namespace">library</property>
+        </structure>
+    </list-property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="27"
+extends="library.Data Source"/>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set" id="6">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">ID</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">ID</text-property>
+                    <text-property name="heading">ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">customerName</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">customerName</text-property>
+                    <text-property name="heading">customerName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">customerPhone</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">customerPhone</text-property>
+                    <text-property name="heading">customerPhone</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">customerMobile</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">customerMobile</text-property>
+                    <text-property name="heading">customerMobile</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">customerEmail</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">customerEmail</text-property>
+                    <text-property name="heading">customerEmail</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Whatsapp</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Whatsapp</text-property>
+                    <text-property name="heading">Whatsapp</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Facebook</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Facebook</text-property>
+                    <text-property name="heading">Facebook</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">customerLenguage</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">customerLenguage</text-property>
+                    <text-property name="heading">customerLenguage</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Maker</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Maker</text-property>
+                    <text-property name="heading">Maker</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">ID</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">customerName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">customerPhone</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">customerMobile</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">customerEmail</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">Whatsapp</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">Facebook</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">customerLenguage</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">Maker</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">ID</property>
+                    <property name="nativeName">customer_id</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">customerName</property>
+                    <property name="nativeName">customer_name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">customerPhone</property>
+                    <property name="nativeName">phone</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">customerMobile</property>
+                    <property name="nativeName">mobile</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">customerEmail</property>
+                    <property name="nativeName">email_1</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">Whatsapp</property>
+                    <property name="nativeName">Whatsapp</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">Facebook</property>
+                    <property name="nativeName">Facebook</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">customerLenguage</property>
+                    <property name="nativeName">customerLenguage</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">Maker</property>
+                    <property name="nativeName">Maker</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select
+Customers.customer_id as ID,
+Customers.customer_name as customerName,
+Customers.phone as customerPhone,
+Customers.mobile as customerMobile,
+Customers.email_1 as customerEmail,
+if(Customers.customer_ws, 'Yes', 'No') as Whatsapp,
+if(Customers.customer_facebook, 'Yes', 'No') as Facebook,
+if(Customers.customer_language is null,'-',if(Customers.customer_language= 2,'English',if(Customers.customer_language= 1,'Español','-'))) as customerLenguage,
+if(m1.makerName is null,m2.makerName, m1.makerName) as Maker
+from Invoices
+
+JOIN ServiceOrders on ServiceOrders.serviceorder_id = Invoices.serviceorder_id
+JOIN Customers on Customers.customer_id = Invoices.customer_id
+left JOIN Vehicles v1 on v1.vehicle_id = ServiceOrders.vehicle_id
+left JOIN Vehicles v2 on v2.vehicle_id = ServiceOrders.secondvehicle_id
+left JOIN VehicleModels v1m on v1m.vehicleModel_id = v1.vehicleModel_id
+left JOIN VehicleModels v2m on v2m.vehicleModel_id = v2.vehicleModel_id
+left JOIN Makers m1 on m1.maker_id = v1m.maker_id
+left JOIN Makers m2 on m2.maker_id = v2m.maker_id
+where Invoices.invoice_date>'2018-12-31' group by Customers.phone order by invoice_date desc;]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>customer_name</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>customerName</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>customerName</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>phone</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>15</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>customerPhone</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>customerPhone</design:label>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>customerMobile</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>customerMobile</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>customerMobile</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>email_1</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>45</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>customerEmail</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>customerEmail</design:label>
+            <design:formattingHints>
+              <design:displaySize>45</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Whatsapp</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>3</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>Whatsapp</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Whatsapp</design:label>
+            <design:formattingHints>
+              <design:displaySize>3</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Facebook</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>3</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>Facebook</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Facebook</design:label>
+            <design:formattingHints>
+              <design:displaySize>3</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>customerLenguage</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>7</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>customerLenguage</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>customerLenguage</design:label>
+            <design:formattingHints>
+              <design:displaySize>7</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Maker</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>45</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>Maker</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Maker</design:label>
+            <design:formattingHints>
+              <design:displaySize>45</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">a4</property>
+            <property name="orientation">landscape</property>
+            <property name="height">11in</property>
+            <property name="width">8.5in</property>
+            <page-header>
+                <label id="4">
+                    <property name="fontSize">14pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="textAlign">center</property>
+                    <text-property name="text">Quality Multiserv Customer List</text-property>
+                </label>
+            </page-header>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="7">
+            <property name="textAlign">center</property>
+            <property name="pageBreakAfter">avoid</property>
+            <property name="pageBreakInside">avoid</property>
+            <property name="dataSet">Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">customerName</property>
+                    <text-property name="displayName">customerName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["customerName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">customerPhone</property>
+                    <text-property name="displayName">customerPhone</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["customerPhone"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">customerMobile</property>
+                    <text-property name="displayName">customerMobile</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["customerMobile"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">customerEmail</property>
+                    <text-property name="displayName">customerEmail</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["customerEmail"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Whatsapp</property>
+                    <text-property name="displayName">Whatsapp</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Whatsapp"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Facebook</property>
+                    <text-property name="displayName">Facebook</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Facebook"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">customerLenguage</property>
+                    <text-property name="displayName">customerLenguage</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["customerLenguage"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Maker</property>
+                    <text-property name="displayName">Maker</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Maker"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">ID</property>
+                    <text-property name="displayName">ID</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["ID"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+            </list-property>
+            <property name="repeatHeader">false</property>
+            <property name="pageBreakInterval">50000</property>
+            <column id="62">
+                <property name="width">0.5in</property>
+            </column>
+            <column id="51">
+                <property name="width">2in</property>
+            </column>
+            <column id="52">
+                <property name="width">1in</property>
+            </column>
+            <column id="53">
+                <property name="width">1in</property>
+            </column>
+            <column id="54">
+                <property name="width">2in</property>
+            </column>
+            <column id="55">
+                <property name="width">1in</property>
+            </column>
+            <column id="56">
+                <property name="width">1in</property>
+            </column>
+            <column id="57">
+                <property name="width">1.5in</property>
+            </column>
+            <column id="58">
+                <property name="width">1in</property>
+            </column>
+            <header>
+                <row id="8">
+                    <property name="fontSize">11pt</property>
+                    <property name="fontWeight">bold</property>
+                    <cell id="59">
+                        <label id="63">
+                            <text-property name="text">ID</text-property>
+                        </label>
+                    </cell>
+                    <cell id="9">
+                        <label id="10">
+                            <text-property name="text">Name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="11">
+                        <label id="12">
+                            <text-property name="text">Phone</text-property>
+                        </label>
+                    </cell>
+                    <cell id="13">
+                        <label id="14">
+                            <text-property name="text">Mobile</text-property>
+                        </label>
+                    </cell>
+                    <cell id="15">
+                        <label id="16">
+                            <text-property name="text">Email</text-property>
+                        </label>
+                    </cell>
+                    <cell id="17">
+                        <label id="18">
+                            <text-property name="text">Whatsapp</text-property>
+                        </label>
+                    </cell>
+                    <cell id="19">
+                        <label id="20">
+                            <text-property name="text">Facebook</text-property>
+                        </label>
+                    </cell>
+                    <cell id="21">
+                        <label id="22">
+                            <text-property name="text">Preference Lenguage</text-property>
+                        </label>
+                    </cell>
+                    <cell id="23">
+                        <label id="24">
+                            <text-property name="text">Maker</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="25">
+                    <property name="pageBreakAfter">avoid</property>
+                    <list-property name="highlightRules">
+                        <structure>
+                            <property name="operator">eq</property>
+                            <property name="backgroundColor">#E1E1E1</property>
+                            <property name="fontWeight">bold</property>
+                            <expression name="testExpr" type="javascript">row.__rownum % 2</expression>
+                            <simple-property-list name="value1">
+                                <value type="javascript">0</value>
+                            </simple-property-list>
+                        </structure>
+                    </list-property>
+                    <cell id="60">
+                        <data id="64">
+                            <property name="resultSetColumn">ID</property>
+                        </data>
+                    </cell>
+                    <cell id="26">
+                        <data id="27">
+                            <property name="resultSetColumn">customerName</property>
+                        </data>
+                    </cell>
+                    <cell id="28">
+                        <data id="29">
+                            <property name="resultSetColumn">customerPhone</property>
+                        </data>
+                    </cell>
+                    <cell id="30">
+                        <data id="31">
+                            <property name="resultSetColumn">customerMobile</property>
+                        </data>
+                    </cell>
+                    <cell id="32">
+                        <data id="33">
+                            <property name="resultSetColumn">customerEmail</property>
+                        </data>
+                    </cell>
+                    <cell id="34">
+                        <data id="35">
+                            <property name="resultSetColumn">Whatsapp</property>
+                        </data>
+                    </cell>
+                    <cell id="36">
+                        <data id="37">
+                            <property name="resultSetColumn">Facebook</property>
+                        </data>
+                    </cell>
+                    <cell id="38">
+                        <data id="39">
+                            <property name="resultSetColumn">customerLenguage</property>
+                        </data>
+                    </cell>
+                    <cell id="40">
+                        <data id="41">
+                            <property name="resultSetColumn">Maker</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="42">
+                    <cell id="61"/>
+                    <cell id="43"/>
+                    <cell id="44"/>
+                    <cell id="45"/>
+                    <cell id="46"/>
+                    <cell id="47"/>
+                    <cell id="48"/>
+                    <cell id="49"/>
+                    <cell id="50"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>
